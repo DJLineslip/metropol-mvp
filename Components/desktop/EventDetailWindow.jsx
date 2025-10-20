@@ -26,10 +26,14 @@ export default function EventDetailWindow({ event }) {
 
   return (
     <div className="bg-white">
-      <img 
-        src={event.image} 
-        alt={event.title}
-        className="w-full h-64 object-cover"
+      <img
+      src={event.image || '/placeholder-event.png'}
+      alt={event.title}
+      className="w-full h-64 object-cover"
+      onError={(e) => {
+        e.currentTarget.onerror = null;
+        e.currentTarget.src = '/placeholder-event.png';
+      }}
       />
       <div className="p-6 space-y-4">
         <div>
