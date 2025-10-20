@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Search } from 'lucide-react';
-import { Input } from '@/components/ui/input';
+// import { Input } from '@/components/ui/input';
 import EventCard from './EventCard';
 
 export default function SearchWindow({ events, onEventClick }) {
@@ -21,7 +21,7 @@ export default function SearchWindow({ events, onEventClick }) {
       <div className="mb-6">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-          <Input
+          <input
             type="text"
             placeholder="Search events, venues, categories..."
             value={searchTerm}

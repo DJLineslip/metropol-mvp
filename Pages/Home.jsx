@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Window from '../components/desktop/Window';
-import ThisWeekWindow from '../components/desktop/ThisWeekWindow';
-import VenuesWindow from '../components/desktop/VenuesWindow';
+import ThisWeekWindow from '../Components/desktop/ThisWeekWindow';
+import VenuesWindow from '../Components/desktop/VenuesWindow';
 import SearchWindow from '../Components/desktop/SearchWindow';
-import EventDetailWindow from '../Components/desktop/EventDetailWindow.jsx';
-import { events } from '../components/data/events';
+import EventDetailWindow from '../Components/desktop/EventDetailWindow';
+import { events } from '../Components/data/events';
 
 export default function Home() {
   const [openWindows, setOpenWindows] = useState([]);
