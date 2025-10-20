@@ -1,0 +1,37 @@
+{
+    "name": "metropol-desktop",
+    "version": "1.0.0",
+    "description": "A React desktop-style interface for browsing events — Metropol.",
+    "main": "index.js",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "keywords": [
+      "react",
+      "vite",
+      "framer-motion",
+      "tailwind",
+      "lucide-react",
+      "date-fns",
+      "events"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+      "date-fns": "^3.6.0",
+      "framer-motion": "^11.0.0",
+      "lucide-react": "^0.370.0",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+      "@vitejs/plugin-react": "^4.3.0",
+      "autoprefixer": "^10.4.20",
+      "postcss": "^8.4.47",
+      "tailwindcss": "^3.4.14",
+      "vite": "^5.2.0"
+    }
+  }
+  
