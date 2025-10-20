@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import Window from '../Components/desktop/Window';
 import ThisWeekWindow from '../Components/desktop/ThisWeekWindow';
@@ -10,6 +10,7 @@ import { events } from '../Components/data/events';
 export default function Home() {
   const [openWindows, setOpenWindows] = useState([]);
   const [nextZIndex, setNextZIndex] = useState(10);
+  const booted = useRef(false); // prevents opening twice in StrictMode
 
   const openWindow = (type, data = null) => {
     const windowId = `${type}-${Date.now()}`;
@@ -32,6 +33,12 @@ export default function Home() {
     setOpenWindows([...openWindows, newWindow]);
     setNextZIndex(nextZIndex + 1);
   };
+
+  useEffect(() => {
+    if (booted.current) return;
+    booted.current = true;
+    openWindow('thisWeek');
+  }, []);
 
   const closeWindow = (windowId) => {
     setOpenWindows(openWindows.filter(w => w.id !== windowId));

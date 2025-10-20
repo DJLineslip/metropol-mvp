@@ -58,21 +58,22 @@ export default function Window({
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
-      className="absolute bg-white rounded-2xl shadow-xl overflow-hidden"
+      className="absolute bg-white rounded-2xl shadow-xl overflow-hidden border border-[#ff2a2a]"
       style={{
         left: position.x,
         top: position.y,
         width: initialSize.width,
         maxHeight: initialSize.height,
         zIndex,
-        cursor: isDragging ? 'grabbing' : 'default',
-        border: '3px solid #FFB3BA'
+        cursor: isDragging ? 'grabbing' : 'default'//,
+        // border: '3px solid #FFB3BA'
+
       }}
       onClick={onFocus}
     >
       {/* Window Header */}
       <div 
-        className="window-header bg-[#FFB3BA] px-4 py-3 flex items-center gap-3 cursor-grab active:cursor-grabbing"
+        className="window-header bg-[#FFB3BA] px-4 py-3 flex items-center gap-3 cursor-grab active:cursor-grabbing border-b border-[#ff2a2a]"
         onMouseDown={handleMouseDown}
       >
         <button 
@@ -85,7 +86,7 @@ export default function Window({
       </div>
 
       {/* Window Content */}
-      <div className="window-content overflow-y-auto bg-white" style={{ maxHeight: initialSize.height - 60 }}>
+      <div className="window-content overflow-y-auto no-scrollbar bg-white" style={{ maxHeight: initialSize.height - 60 }}>
         {children}
       </div>
     </motion.div>

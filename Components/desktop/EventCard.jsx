@@ -15,7 +15,7 @@ export default function EventCard({ event, onClick, compact = false }) {
     return (
       <div 
         onClick={() => onClick(event)}
-        className="flex gap-3 p-3 hover:bg-gray-50 cursor-pointer transition-colors border-b border-gray-100 last:border-0"
+        className="flex gap-3 p-3 hover:bg-gray-50 cursor-pointer transition-colors border-b border-gray/40 last:border-0"
       >
         <img
         src={event.image || '/placeholder-event.png'}

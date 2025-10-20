@@ -20,7 +20,7 @@ export default function VenuesWindow({ events, onEventClick }) {
       <h2 className="text-xl font-bold text-gray-900 mb-6">Venues</h2>
       <div className="space-y-6">
         {sortedVenues.map(([venue, venueEvents]) => (
-          <div key={venue} className="border-b border-gray-200 pb-6 last:border-0">
+          <div key={venue} className="border-b border-black/30 pb-6 last:border-0">
             <div className="flex items-center gap-2 mb-4">
               <Building2 className="w-5 h-5 text-gray-400" />
               <h3 className="font-semibold text-gray-900">{venue}</h3>
