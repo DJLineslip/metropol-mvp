@@ -120,7 +120,12 @@ export default function Home() {
       {/* Top Navigation Bar */}
       <div className="fixed top-0 left-0 right-0 bg-gray-200/80 backdrop-blur-sm z-50">
         <div className="flex items-center justify-between px-6 py-3">
-          <h1 className="text-xl font-bold text-gray-900">Metropol</h1>
+        <img
+          src="/logo.png"
+          alt="Metropol"
+          className="h-6 w-auto select-none"
+          draggable="false"
+        />
           <nav className="flex items-center gap-8">
             <button
               onClick={() => openWindow('thisWeek')}
