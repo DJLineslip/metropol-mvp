@@ -3,8 +3,8 @@ import { AnimatePresence } from 'framer-motion';
 import Window from '../components/desktop/Window';
 import ThisWeekWindow from '../components/desktop/ThisWeekWindow';
 import VenuesWindow from '../components/desktop/VenuesWindow';
-import SearchWindow from '../components/desktop/SearchWindow';
-import EventDetailWindow from '../components/desktop/EventDetailWindow';
+import SearchWindow from '../Components/desktop/SearchWindow';
+import EventDetailWindow from '../Components/desktop/EventDetailWindow.jsx';
 import { events } from '../components/data/events';
 
 export default function Home() {
