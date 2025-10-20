@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import Window from '../components/desktop/Window';
+import Window from '../Components/desktop/Window';
 import ThisWeekWindow from '../Components/desktop/ThisWeekWindow';
 import VenuesWindow from '../Components/desktop/VenuesWindow';
 import SearchWindow from '../Components/desktop/SearchWindow';
