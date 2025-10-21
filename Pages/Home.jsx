@@ -130,7 +130,7 @@ export default function Home() {
         <img
           src="/logo.png"
           alt="Metropol"
-          className="h-12 md:h-16 lg:h-20 w-auto object-contain select-none"
+          className="h-6 w-auto select-none"
           draggable="false"
         />
           <nav className="flex items-center gap-8">
